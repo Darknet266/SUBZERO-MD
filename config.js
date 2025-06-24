@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "SUBZERO-MD~FbWb4DTmLz5uib9On4zu",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "SUBZERO-MD",  // Bot's display name
     MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
@@ -18,8 +18,8 @@ module.exports = {
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "Mr Frank",           // Owner's name
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "‪2348029264766‬",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "Darknet",           // Owner's name
     DEV: process.env.DEV || "263719647303",                     // Developer's contact number
     DEVELOPER_NUMBER: '263719647303@s.whatsapp.net',            // Developer's WhatsApp ID
 
@@ -51,7 +51,7 @@ module.exports = {
     ANTI_LINK: process.env.ANTI_LINK || "true",                 // Block links in groups?
     ANTI_VV: process.env.ANTI_VV || "true",                     // Block view-once messages?
     DELETE_LINKS: process.env.DELETE_LINKS || "true",          // Auto-delete links?
-    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",          // Log deleted messages (or 'same' to resend)
+    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same",          // Log deleted messages (or 'same' to resend)
     ANTI_BOT: process.env.ANTI_BOT || "true",
     PM_BLOCKER: process.env.PM_BLOCKER || "true",
 
@@ -59,8 +59,8 @@ module.exports = {
     FOOTER: process.env.FOOTER || "*© Gᴇɴᴇʀᴀᴛᴇᴅ ʙʏ Sᴜʙᴢᴇʀᴏ*",  // Bot description
     PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",        // Show bot as always online?
-    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
-    AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
+    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false", // React to status updates?
+    AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || false", // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false",
     WELCOME_GOODBYE: process.env.WELCOME_GOODBYE || "false",
     AMDIN_EVENTS: process.env.ADMIN_EVENTS || "true",
